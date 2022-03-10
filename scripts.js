@@ -12,7 +12,10 @@ var currentArray = [];
 const objectsArray = [
 
 ]; 
-const thingsArray = [
+const foodArray = [
+    "images/banana.jpeg",
+    "images/apple.jpeg",
+    "images/pear.jpeg"
 
 ]; 
 const randomArray = [
@@ -22,62 +25,93 @@ const randomArray = [
 
 document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("buttons").style.display = "none";
+    hideImages();
 });
 
 function startGame(arrayName){
+    showImages();
+    var image = document.getElementById("emptyImage");
+    var imageTwo = document.getElementById("emptyImageTwo");
     if(arrayName == "objects"){
         currentArray = objectsArray;
-        console.log(currentArray);
-        const randomNumber = Math.floor(Math.random() * currentArray.length)
-        const randomNumberTwo = Math.floor(Math.random() * currentArray.length)
-        if(randomNumber == randomNumberTwo){
-            randomNumberTwo + 1;
-            document.getElementById("left").innerHTML= (currentArray[randomNumber]);
-            document.getElementById("or").innerHTML = "or";
-            document.getElementById("right").innerHTML= currentArray[randomNumberTwo];
+        var randomNumber = Math.floor(Math.random() * currentArray.length);
+        var randomNumberTwo = Math.floor(Math.random() * currentArray.length);
+        if((randomNumber == randomNumberTwo) && (randomNumber == (currentArray.length-1))){
+            randomNumber--;
+            image.src = (currentArray[randomNumber]);
+            document.getElementById("or").innerHTML= "or";
+            imageTwo.src = (currentArray[randomNumberTwo]);
+        }
+        else if(randomNumber == randomNumberTwo){
+            randomNumberTwo++;
+            image.src = (currentArray[randomNumber]);
+            document.getElementById("or").innerHTML= "or";
+            imageTwo.src = (currentArray[randomNumberTwo]);
         }
         else {
-            document.getElementById("left").innerHTML= (currentArray[randomNumber]);
+            image.src = (currentArray[randomNumber]);
             document.getElementById("or").innerHTML= "or";
-            document.getElementById("right").innerHTML= currentArray[randomNumberTwo];
+            imageTwo.src = (currentArray[randomNumberTwo]);
         }
     }
-    else if(arrayName == "things"){
-        currentArray = thingsArray;
+    else if(arrayName == "food"){
+        currentArray = foodArray;
         console.log(currentArray);
-        const randomNumber = Math.floor(Math.random() * currentArray.length)
-        const randomNumberTwo = Math.floor(Math.random() * currentArray.length)
-        if(randomNumber == randomNumberTwo){
-            randomNumberTwo + 1;
-            document.getElementById("left").innerHTML= (currentArray[randomNumber]);
-            document.getElementById("or").innerHTML = "or";
-            document.getElementById("right").innerHTML= currentArray[randomNumberTwo];
+        var randomNumber = Math.floor(Math.random() * currentArray.length);
+        var randomNumberTwo = Math.floor(Math.random() * currentArray.length);
+        if((randomNumber == randomNumberTwo) && (randomNumber == (currentArray.length-1))){
+            randomNumber--;
+            image.src = (currentArray[randomNumber]);
+            document.getElementById("or").innerHTML= "or";
+            imageTwo.src = (currentArray[randomNumberTwo]);
+        }
+        else if(randomNumber == randomNumberTwo){
+            randomNumberTwo++;
+            image.src = (currentArray[randomNumber]);
+            document.getElementById("or").innerHTML= "or";
+            imageTwo.src = (currentArray[randomNumberTwo]);
         }
         else {
-            document.getElementById("left").innerHTML= (currentArray[randomNumber]);
+            image.src = (currentArray[randomNumber]);
             document.getElementById("or").innerHTML= "or";
-            document.getElementById("right").innerHTML= currentArray[randomNumberTwo];
+            imageTwo.src = (currentArray[randomNumberTwo]);
         }
     }
     else if(arrayName == "random"){
         currentArray = randomArray;
-        console.log(currentArray);
-        const randomNumber = Math.floor(Math.random() * currentArray.length)
-        const randomNumberTwo = Math.floor(Math.random() * currentArray.length)
-        if(randomNumber == randomNumberTwo){
-            randomNumberTwo + 1;
-            document.getElementById("left").innerHTML= (currentArray[randomNumber]);
-            document.getElementById("or").innerHTML = "or";
-            document.getElementById("right").innerHTML= currentArray[randomNumberTwo];
+        var randomNumber = Math.floor(Math.random() * currentArray.length);
+        var randomNumberTwo = Math.floor(Math.random() * currentArray.length);
+        if((randomNumber == randomNumberTwo) && (randomNumber == (currentArray.length -1))){
+            randomNumber--;
+            image.src = (currentArray[randomNumber]);
+            document.getElementById("or").innerHTML= "or";
+            imageTwo.src = (currentArray[randomNumberTwo]);
+        }
+        else if(randomNumber == randomNumberTwo){
+            randomNumberTwo++;
+            image.src = (currentArray[randomNumber]);
+            document.getElementById("or").innerHTML= "or";
+            imageTwo.src = (currentArray[randomNumberTwo]);
         }
         else {
-            document.getElementById("left").innerHTML= (currentArray[randomNumber]);
+            image.src = (currentArray[randomNumber]);
             document.getElementById("or").innerHTML= "or";
-            document.getElementById("right").innerHTML= currentArray[randomNumberTwo];
+            imageTwo.src = (currentArray[randomNumberTwo]);
         }
     }
 }
-
+function hideImages(){
+    var image = document.getElementById("emptyImage");
+    var imageTwo = document.getElementById("emptyImageTwo");
+    image.style.visibility="hidden";
+    imageTwo.style.visibility="hidden";
+}
+function showImages(){
+    var image = document.getElementById("emptyImage");
+    var imageTwo = document.getElementById("emptyImageTwo");
+    image.style.visibility="visible";
+    imageTwo.style.visibility="visible";
+}
 function nextQuestion(){
     const randomNumber = Math.floor(Math.random() * testArray.length)
     const randomNumberTwo = Math.floor(Math.random() * testArray.length)
@@ -91,7 +125,6 @@ function nextQuestion(){
         document.getElementById("right").innerHTML= testArray[randomNumberTwo];
     }
 }
-
 function resetGame(){
     
 }
