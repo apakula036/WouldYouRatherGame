@@ -24,12 +24,13 @@ const randomArray = [
 ]; 
 
 document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById("buttons").style.display = "none";
+    //document.getElementById("buttons").style.visibility="hidden";
     hideImages();
 });
 
 function startGame(arrayName){
     showImages();
+    //document.getElementById("buttons").style.visibility="visible";
     var image = document.getElementById("emptyImage");
     var imageTwo = document.getElementById("emptyImageTwo");
     if(arrayName == "objects"){
@@ -112,6 +113,7 @@ function showImages(){
     image.style.visibility="visible";
     imageTwo.style.visibility="visible";
 }
+/*
 function nextQuestion(){
     const randomNumber = Math.floor(Math.random() * testArray.length)
     const randomNumberTwo = Math.floor(Math.random() * testArray.length)
@@ -124,7 +126,7 @@ function nextQuestion(){
         document.getElementById("left").innerHTML= (testArray[randomNumber]);
         document.getElementById("right").innerHTML= testArray[randomNumberTwo];
     }
-}
+}*/
 function resetGame(){
-    
+    location.reload();
 }
