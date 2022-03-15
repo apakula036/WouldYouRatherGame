@@ -15,7 +15,8 @@ const objectsArray = [
 const foodArray = [
     "images/banana.jpeg",
     "images/apple.jpeg",
-    "images/pear.jpeg"
+    "images/pear.jpeg",
+    "images/pizza.jpg"
 
 ]; 
 const randomArray = [
