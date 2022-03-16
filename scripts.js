@@ -23,6 +23,9 @@ const randomArray = [
     
     
 ]; 
+const arrayOfTextChoices = [
+
+];
 
 document.addEventListener("DOMContentLoaded", function(){
     //document.getElementById("buttons").style.visibility="hidden";
