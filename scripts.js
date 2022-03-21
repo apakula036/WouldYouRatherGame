@@ -38,9 +38,11 @@ const arrayOfTextChoices = [
 ];
 function startGameText(arrayName){
     hideImages();
+    document.getElementById("questionH1").style.visibility="visible";
+    document.getElementById("or").style.visibility="hidden";
     arrayName = arrayOfTextChoices;
     var randomNumber = Math.floor(Math.random() * arrayName.length);
-    document.getElementById("or").innerHTML = (arrayName[randomNumber]);
+    document.getElementById("questionH1").innerHTML = (arrayName[randomNumber]);
     console.log((arrayName[randomNumber]))
 }
 document.addEventListener("DOMContentLoaded", function(){
@@ -49,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 function startGame(arrayName){
+    document.getElementById("questionH1").style.visibility="hidden";
     showImages();
     document.getElementById("or").style.visibility="visible";
     //document.getElementById("buttons").style.visibility="visible";
