@@ -18,11 +18,11 @@ const foodArray = [
     "images/pear.jpeg",
     "images/pizza.jpg"
 
-]; 
+];
 const randomArray = [
     
     
-]; 
+];
 const arrayOfTextChoices = [
     "What game would you play on a Jumbrotron in a fully packed stadium?",
     "Star wars or Lord of the Rings?",
@@ -34,7 +34,12 @@ const arrayOfTextChoices = [
     "Would you rather sound like Squidward or jumble sentences like Yoda?",
     "Would you rather have skin that changes color based on your emotions or tattoos appear all over your body depicting what you did yesterday?",
     "Would you rather have 20 legs or 1 arm?",
-    "",
+    "Would you rather have unlimited popcorn or unlimited icees?",
+    "Would you rather have a personal chef or a personal driver?",
+    "Would you rather have to use chopsticks every day for the rest of your life or use a fork?",
+    "Would you rather never be able to shower again or have no legs?",
+    "Would you rather poop in the only toilet at a party knowing that you'll clog it or poop in the bushes in the backyard?",
+    "Would you rather only be able to wear sweatpants for the rest of your life or only be able to wear suits for the rest of your life?"
 
 ];
 function startGameText(arrayName){
@@ -62,6 +67,7 @@ function startGame(arrayName){
         currentArray = objectsArray;
         var randomNumber = Math.floor(Math.random() * currentArray.length);
         var randomNumberTwo = Math.floor(Math.random() * currentArray.length);
+        var randomNumberThree = Math.floor(Math.random() * currentArray.length);
         if((randomNumber == randomNumberTwo) && (randomNumber == (currentArray.length-1))){
             randomNumber--;
             image.src = (currentArray[randomNumber]);
