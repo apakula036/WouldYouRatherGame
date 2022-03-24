@@ -24,16 +24,17 @@ const randomArray = [
     
 ]; 
 const arrayOfTextChoices = [
-        "What game would you play on a Jumbrotron in a fully packed stadium?",
-        "Star wars or Lord of the Rings?",
-        "Would you rather have the ability to see 10 minutes into the future or 150 years into the future?",
-        "Would you rather have telekinesis (the ability to move things with your mind) or telepathy (the ability to read minds)?",
-        "Would you rather be forced to sing along or dance to every single song you hear?",
-        "Would you rather have everyone you know be able to read your thoughts or for everyone you know to have access to your Internet history?",
-        "Would you rather be royalty 1,000 years ago or an average person today?",
-        "Would you rather sound like Squidward or jumble sentences like Yoda?",
-        "Would you rather have skin that changes color based on your emotions or tattoos appear all over your body depicting what you did yesterday?"
-
+    "What game would you play on a Jumbrotron in a fully packed stadium?",
+    "Star wars or Lord of the Rings?",
+    "Would you rather have the ability to see 10 minutes into the future or 150 years into the future?",
+    "Would you rather have telekinesis (the ability to move things with your mind) or telepathy (the ability to read minds)?",
+    "Would you rather be forced to sing along or dance to every single song you hear?",
+    "Would you rather have everyone you know be able to read your thoughts or for everyone you know to have access to your Internet history?",
+    "Would you rather be royalty 1,000 years ago or an average person today?",
+    "Would you rather sound like Squidward or jumble sentences like Yoda?",
+    "Would you rather have skin that changes color based on your emotions or tattoos appear all over your body depicting what you did yesterday?",
+    "Would you rather have 20 legs or 1 arm?",
+    "",
 
 ];
 function startGameText(arrayName){
