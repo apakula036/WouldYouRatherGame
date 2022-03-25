@@ -39,7 +39,8 @@ const arrayOfTextChoices = [
     "Would you rather have to use chopsticks every day for the rest of your life or use a fork?",
     "Would you rather never be able to shower again or have no legs?",
     "Would you rather poop in the only toilet at a party knowing that you'll clog it or poop in the bushes in the backyard?",
-    "Would you rather only be able to wear sweatpants for the rest of your life or only be able to wear suits for the rest of your life?"
+    "Would you rather only be able to wear sweatpants for the rest of your life or only be able to wear suits for the rest of your life?",
+    "Would you rather have your parents pick your fiancee out or stay single the rest of your life?",
 
 ];
 function startGameText(arrayName){
