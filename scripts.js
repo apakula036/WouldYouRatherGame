@@ -41,6 +41,11 @@ const arrayOfTextChoices = [
     "Would you rather poop in the only toilet at a party knowing that you'll clog it or poop in the bushes in the backyard?",
     "Would you rather only be able to wear sweatpants for the rest of your life or only be able to wear suits for the rest of your life?",
     "Would you rather have your parents pick your fiancee out or stay single the rest of your life?",
+    "If you could wake up tomorrow and be automatically granted 10,000 hours of experience in any skill of your choice, which would it be?",
+    "Would you rather earn $0.01 every time you took a step or $1 every time you jumped?",
+    "Would you rather live with a ghost who cooks delicious meals for you everyday or live with a ghost who cleans your home everyday?",
+    "Would you rather be able to teleport or always have a minimum of $25 in your wallet?",
+    "Would you rather be an extremely talented liar or a human lie detector?",
 
 ];
 function startGameText(arrayName){
