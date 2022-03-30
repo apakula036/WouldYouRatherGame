@@ -46,7 +46,7 @@ const arrayOfTextChoices = [
     "Would you rather live with a ghost who cooks delicious meals for you everyday or live with a ghost who cleans your home everyday?",
     "Would you rather be able to teleport or always have a minimum of $25 in your wallet?",
     "Would you rather be an extremely talented liar or a human lie detector?",
-    "",
+    "Would you rather live the rest of your life in the Star Wars world or Lord of the Rings world?",
 ];
 function startGameText(arrayName){
     hideImages();
