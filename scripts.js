@@ -47,6 +47,8 @@ const arrayOfTextChoices = [
     "Would you rather be able to teleport or always have a minimum of $25 in your wallet?",
     "Would you rather be an extremely talented liar or a human lie detector?",
     "Would you rather live the rest of your life in the Star Wars world or Lord of the Rings world?",
+    "Would you choose to get 100 dollars every day when you wake up BUT every drink that you try to drink has boba balls in it?",
+    "Would you rather be 4 feet fall or 9 feet tall?",
 ];
 function startGameText(arrayName){
     hideImages();
