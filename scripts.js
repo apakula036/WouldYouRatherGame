@@ -50,6 +50,8 @@ const arrayOfTextChoices = [
     "Would you choose to get 100 dollars every day when you wake up BUT every drink that you try to drink has boba balls in it?",
     "Would you rather be 4 feet fall or 9 feet tall?",
     "Would you rather be super rich but stuck in Alaska or super poor but start off in Hawaii?",
+    "Would you rather have to shop at Walmart for the rest of your life?", 
+    "Would you rather have no legs?",
 ];
 function startGameText(arrayName){
     hideImages();
