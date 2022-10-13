@@ -25,7 +25,6 @@ const randomArray = [
 ];
 const arrayOfTextChoices = [
     "What game would you play on a Jumbrotron in a fully packed stadium?",
-    "Star wars or Lord of the Rings?",
     "Would you rather have the ability to see 10 minutes into the future or 150 years into the future?",
     "Would you rather have telekinesis (the ability to move things with your mind) or telepathy (the ability to read minds)?",
     "Would you rather be forced to sing along or dance to every single song you hear?",
@@ -36,7 +35,7 @@ const arrayOfTextChoices = [
     "Would you rather have 20 legs or 1 arm?",
     "Would you rather have unlimited popcorn or unlimited icees?",
     "Would you rather have a personal chef or a personal driver?",
-    "Would you rather have to use chopsticks every day for the rest of your life or use a fork?",
+    "Would you rather have to use chopsticks for the rest of your life or use a fork?",
     "Would you rather never be able to shower again or have no legs?",
     "Would you rather poop in the only toilet at a party knowing that you'll clog it or poop in the bushes in the backyard?",
     "Would you rather only be able to wear sweatpants for the rest of your life or only be able to wear suits for the rest of your life?",
@@ -48,13 +47,33 @@ const arrayOfTextChoices = [
     "Would you rather be an extremely talented liar or a human lie detector?",
     "Would you rather live the rest of your life in the Star Wars world or Lord of the Rings world?",
     "Would you choose to get 100 dollars every day when you wake up BUT every drink that you try to drink has boba balls in it?",
-    "Would you rather be 4 feet fall or 9 feet tall?",
+    "Would you rather be 3 feet fall or 9 feet tall?",
     "Would you rather be super rich but stuck in Alaska or super poor but start off in Hawaii?",
     "Would you rather have to shop at Walmart for the rest of your life or would you rather have no legs?", 
 ];
 const arrayOfChoicesSingleOptions = [
-    "No legs",
-    ""
+    "have no legs",
+    "shop at Walmart for the rest of your life",
+    "9 feet tall",
+    "3 feet fall",
+    "every drink that you try to drink has boba balls in it",
+    "never be able to shower again",
+    "have to use chopsticks for the rest of your life",
+    "have 20 legs",
+    "only 1 arm",
+    "sound like Squidward",
+    "jumble sentences like Yoda",
+    "be forced to sing along",
+    "dance to every single song you hear",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+
+
     ];
 function startGameText(arrayName){
     hideImages();
